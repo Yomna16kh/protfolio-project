@@ -1,0 +1,852 @@
+
+/* HEADER מקורי */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: #1b1b1b;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.logo-text {
+    font-family: 'Playwrite AU SA', cursive;
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: bold;
+    border-bottom: 2px solid #00e6e6;
+}
+
+/* ניווט */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* גלילה חלקה */
+html {
+    scroll-behavior: smooth;
+}
+
+/* מבנה בסיסי */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Heebo', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    direction: rtl;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* HEADER */
+
+
+
+
+
+/* ניווט */
+
+
+
+/* HERO */
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(18, 18, 18, 0.7);
+    z-index: 1;
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    padding: 20px;
+    transform: translate(10%);
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    color: #00e6e6;
+    margin: 0 0 20px 0;
+    white-space: nowrap;
+    text-align: center;
+
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.6;
+    margin: 0;
+    text-align: center;
+}
+
+/* ABOUT */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about-image img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    color: #00e6e6;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ccc;
+    max-width: 700px;
+}
+
+.cv-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background-color: #00e6e6;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.cv-button:hover {
+    background-color: #00c1c1;
+}
+
+/* PROJECTS */
+.projects-section {
+    padding: 80px 40px;
+    background-color: #121212;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    direction: rtl;
+    /* תיקון כיוון להצגת פרויקטים מימין לשמאל */
+}
+
+.project-card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    font-size: 22px;
+    color: #00e6e6;
+    margin: 20px 0 10px 0;
+}
+
+.project-card p {
+    color: #ffffff;
+    font-size: 16px;
+    padding: 0 20px 20px;
+    line-height: 1.5;
+}
+
+.project-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #00e6e6;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.project-btn:hover {
+    background-color: #00c1c1;
+}
+
+.project-frame {
+    width: 100%;
+    max-width: 1200px;
+    height: 800px;
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transform: scale(0.75);
+    transform-origin: top center;
+    border-radius: 12px;
+}
+
+.project-top {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #1b1b1b;
+    color: #fff;
+}
+
+.project-top h1 {
+    font-size: 32px;
+    color: #00e6e6;
+    margin-bottom: 15px;
+}
+
+.project-top p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 25px;
+    color: #ccc;
+}
+
+.tech-icons {
+    margin-top: 20px;
+}
+
+.tech-icons img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.project-preview {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #121212;
+}
+
+.project-frame {
+    width: 100%;
+    max-width: 1200px;
+    height: 800px;
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transform: scale(0.75);
+    transform-origin: top center;
+    border-radius: 12px;
+}
+
+/* ============================================
+   עיצוב ספציפי לפרויקט 1 – טופס ייעוץ אישי
+   ============================================ */
+body {
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+    direction: rtl;
+    background: #ffffff;
+}
+
+.hero {
+    width: 1920px;
+    height: 590px;
+    background: url('images/Path-15.jpg') center/cover no-repeat;
+    position: relative;
+    margin: 0 auto;
+}
+
+.after-hero {
+    width: 1920px;
+    height: 490px;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+.form-container {
+    position: absolute;
+    top: 157px;
+    left: 1056px;
+    width: 569px;
+    height: 643px;
+    background: rgba(26, 26, 26, 0.85);
+    padding: 60px 40px 50px 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    animation: fadeIn 1.2s ease forwards;
+}
+
+.form-container h1 {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 900;
+    margin: 0 0 20px 0;
+    text-align: right;
+    width: 100%;
+}
+
+.subtitle {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: right;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+}
+
+label {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #D31C75;
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #b2175e;
+    outline: none;
+}
+
+button {
+    margin-top: 20px;
+    width: 150px;
+    height: 45px;
+    background-color: #D31C75;
+    border: none;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    align-self: flex-start;
+}
+
+button:hover {
+    background-color: #b2175e;
+    transform: translateY(-3px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1400px) {
+    .form-container {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .hero,
+    .after-hero {
+        width: 100%;
+    }
+}
+
+
+    .form-container h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    button {
+        align-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container h1 {
+        font-size: 22px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+
+    input,
+    button {
+        font-size: 16px;
+        height: 45px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* === עיצוב לפרויקט 2 – Here & Now === */
+.project-header {
+    text-align: center;
+    padding: 60px 20px 20px;
+}
+
+.project-header h2 {
+    color: #00e6e6;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.project-header p {
+    color: #ccc;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+
+.download-btn {
+    background-color: #00e6e6;
+    color: #000;
+    padding: 10px 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.tech-icons {
+    margin-top: 10px;
+}
+
+.tech-icons i {
+    font-size: 30px;
+    margin: 0 10px;
+    color: #00e6e6;
+}
+
+.project-preview {
+    margin: 40px auto;
+    max-width: 1100px;
+    height: 700px;
+    border: none;
+    display: block;
+}
+
+
+
+
+
+
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Heebo', sans-serif;
+    margin: 0;
+}
+
+.project-display {
+    width: 100%;
+    max-width: 720px;
+    margin: 40px auto;
+    padding: 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project-display iframe {
+    width: 100%;
+    height: 480px;
+    border: none;
+    border-radius: 0;
+    display: block;
+}
+
+.contact-join {
+    padding: 80px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-wrapper {
+    background-color: rgba(255, 255, 255, 0.05);
+    max-width: 600px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.contact-wrapper h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contact-wrapper p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.contact-wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-wrapper input,
+.contact-wrapper textarea {
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+}
+
+.contact-wrapper textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-wrapper button {
+    width: 100%;
+    background-color: #2EDFC3;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-wrapper button:hover {
+    background-color: #25c3ab;
+}
+
+.site-footer {
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    margin-top: 80px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.footer-social {
+    margin-top: 15px;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #2EDFC3;
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+    will-change: opacity, transform;
+}
+
+.fade-in-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* רספונסיביות למסכים קטנים */
+
+
+  .hero h1 {
+    font-size: 22px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+
+  .project-card,
+  .form-section,
+  .gallery {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  .project-display iframe {
+    height: 400px;
+  }
+}
+
+
+/* רספונסיביות מעודכנת לכל האתר */
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+  }
+
+  .background-video {
+    height: 100%;
+  }
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .hero h1 {
+    font-size: 22px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+
+  .project-card,
+  .form-section,
+  .gallery {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  .project-display iframe {
+    height: 400px;
+  }
+}
+
+
+
+
+  .hero-content {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+
+  .hero p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .hero-content {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+    line-height: 1.5;
+  }
+
+  .hero p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+
+/* BURGER MENU */
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* RESPONSIVE MENU */
+@media (max-width: 768px) {
+    .main-nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #1b1b1b;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        z-index: 999;
+    }
+
+    .main-nav ul.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
+}

@@ -1,0 +1,118 @@
+/* כללי */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Heebo', sans-serif;
+    height: 100%;
+    direction: rtl;
+    background-color: #1a1a1a;
+}
+
+.landing-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.image-box {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;
+}
+
+.image-box img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+
+.form-box {
+    flex: 1;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-box h1 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.form-box p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+/* טופס */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 2px solid #e67e22;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #000;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #f39c12;
+    box-shadow: 0 0 8px #f39c12;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f39c12;
+}
+
+.social-bar {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #e67e22;
+}
+
+.social-bar img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.social-bar img:hover {
+    transform: scale(1.2);
+}

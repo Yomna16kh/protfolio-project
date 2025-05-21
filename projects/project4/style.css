@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    direction: rtl;
+    background-color: #f2f2f2;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.left-side {
+    flex: 1;
+    background: url('images/Coffee.png') center center/cover no-repeat;
+}
+
+.right-side {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-side h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #002B5B;
+    font-weight: bold;
+}
+
+.right-side p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #444;
+    line-height: 1.6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #002B5B;
+    padding: 10px 5px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-bottom-color: #014282;
+    outline: none;
+}
+
+button {
+    background-color: #002B5B;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: flex-start;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #014282;
+}
+
+.badge-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.badge-icons img {
+    height: 45px;
+    transition: transform 0.3s;
+}
+
+.badge-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* רספונסיביות לפרויקט 4 - קפה */
+
+@media (max-width: 768px) {
+  .coffee-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .coffee-img {
+    display: block;
+    order: -1;
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .form-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+    direction: rtl;
+    background: #ffffff;
+    height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    height: auto;
+    position: relative;
+    background: url(images/path-15.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 60vh;
+    width: 100vw;
+    height: 100%;
+    background-color: white;
+
+}
+
+
+/* תיבת טופס */
+.form-container {
+    position: absolute;
+    top: 16%;
+    right: 16%;
+    width: 30%;
+    height: 70%;
+    background-color: rgba(26, 26, 26, 0.85);
+    padding: 30px 40px 40px 40px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* כותרת */
+.form-container h1 {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 900;
+    margin: 10px 0 0 0;
+    padding: 10px;
+    text-align: right;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+/* תיאור קצר */
+.subtitle {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: right;
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+/* טופס */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+label {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #D31C75;
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+button {
+    margin-top: 5px;
+    width: 150px;
+    height: 45px;
+    background-color: #D31C75;
+    border: none;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.project-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    background-color: #1b1b1b;
+}
+
+.p1Pic {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.badge-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.badge-icons img {
+    height: 45px;
+    transition: transform 0.3s;
+}
+
+.badge-icons img:hover {
+    transform: scale(1.1);
+}
+
+.h2 {
+    color: #00c1c1;
+    font-size: 24px;
+}
+@media (max-width: 768px) {
+    .form-container {
+        position: static;
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .form-container form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .form-container input,
+    .form-container button {
+        width: 100%;
+    }
+}
+
+
+
+/* רספונסיביות לפרויקט 1 - טופס שחור שעולה למעלה */
+@media (max-width: 768px) {
+  .form-container {
+    margin-top: 80px !important;
+  }
+}
+
+
+/* תיקון נוסף לפרויקט 1 – מרווח מהחלק העליון */
+
+@media (max-width: 768px) {
+  .form-container {
+    position: relative !important;
+    margin-top: 100px !important;
+    padding-bottom: 30px;
+  }
+}
+
+
+/* תיקון אחרון - למרכז את הטופס בפרויקט 1 */
+
+@media (max-width: 768px) {
+  .form-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-container {
+    margin: 100px auto 30px auto !important;
+    padding: 20px;
+    max-width: 90%;
+  }
+}
